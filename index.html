@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twina Skincare</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header class="pink-header">
+    <a href="#home">
+      <img src="images/logo.png" alt="Twina Skincare">
+    </a>
+    <h1 class="logo-text">Twina Skincare</h1>
+
+    <div class="top-nav">
+      <input type="text" placeholder="Search...">
+      <a href="#" class="button black">Cart</a>
+      <a href="#" class="button black">Wishlist</a>
+      <a href="#" class="button black">Login</a>
+      <a href="#" class="button black">Signup</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="background-image: url('images/background-image.png'); background-size: cover; background-position: top;">
+    </section>
+
+    <section id="products">
+      <h2>Our Skincare Products</h2>
+
+      <div class="product-grid">
+        <section class="product">
+          <img src="images/lanaige.png" alt="Product 1 Image">
+          <h3>Lanaige lip Mask</h3>
+          <p>A 24hr hydrating lip Mask</p>
+          <span>&#8377; rs/999</span>
+          <div class="product-actions">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </section>
+
+        <section class="product">
+          <img src="images/snailmucin.png" alt="Product 2 Image">
+          <h3>Cosrx Snail mucin</h3>
+          <p>Get Glass skin in one go.</p>
+          <span>&#8377;rs. 1900</span>
+          <div class="product-actions">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </section>
+
+        <section class="product">
+          <img src="images/paulaschoice.png" alt="Product 3 Image">
+          <h3>Paulas choice BHA</h3>
+          <p>Super cleanse your skin chemically</p>
+          <span>&#8377;rs.2200</span>
+          <div class="product-actions">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </section>
+
+        <section class="product">
+          <img src="images/cetaphil.png" alt="Product 4 Image">
+          <h3>Cetaphil foaming cleanser</h3>
+          <p>Get rid of oily Skin</p>
+          <span>&#8377; rs.599</span>
+          <div class="product-actions">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </section>
+
+        <section class="product">
+          <img src="images/moisturesurge.png" alt="Product 5 Image">
+          <h3>Clinque Moisture Surge</h3>
+          <p>Heaven in form of a moisturizer</p>
+          <span>&#8377; rs.3700</span>
+          <div class="product-actions">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </section>
+
+        <section class="product">
+          <img src="images/ordinary.png" alt="Product 6 Image">
+          <h3>Ordinary Multipeptide Serum</h3>
+          <p>Youthful skin is just a serum away.</p>
+          <span>&#8377; rs.999</span>
+          <div class="product-actions">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-wishlist">Add to Wishlist</button>
+          </div>
+        </section>
+      
+      </div>
+
+      <a href="#" class="view-all-products">View All Products</a>
+    </section>
+
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p>Welcome to Twina Skincare, your one-stop destination for high-quality skincare products. We are dedicated to providing our customers with natural and effective skincare solutions that enhance their beauty and confidence.
+      At Twina Skincare, we believe in the power of nature. That's why all our products are carefully crafted using the finest natural ingredients, sourced ethically from around the world. Each product is formulated to deliver visible results while nourishing and rejuvenating your skin.
+      Our team of skincare experts is passionate about helping you achieve your skincare goals. Whether you're looking for anti-aging treatments, acne solutions, or simply want to pamper your skin, we have the perfect products for you.
+      Customer satisfaction is our top priority, and we strive to provide an exceptional shopping experience. From our user-friendly website to our fast and reliable shipping, we are committed to making your skincare journey enjoyable and hassle-free.</p>
+      Thank you for choosing Twina Skincare. We look forward to helping you discover the beauty of natural skincare!</p>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Twina Skincare 2024</p>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            console.error('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+  </script>
+</body>
+</html>

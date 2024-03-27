@@ -1,0 +1,23 @@
+
+{
+    "name": "Twina Skincare",
+    "short_name": "Twina",
+    "description": "Discover high-quality skincare products at Twina Skincare. We offer natural and effective solutions to enhance your beauty and confidence.",
+    "icons": [
+      {
+        "src": "images/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "images/ordinary.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffc0cb",
+    "theme_color": "#f7b5b0"
+  }
+  
